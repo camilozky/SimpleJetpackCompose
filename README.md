@@ -13,7 +13,7 @@ A new way of writing UI directly in code
 
 # Why should you use Compose? 
 
-1 language for everything, including UI : Kotlin
+✨ONE language for everything, including UI : Kotlin✨
 
 Declarative approach
 
@@ -37,7 +37,17 @@ Compose UI system ⇢  composition
 
 ![image](https://user-images.githubusercontent.com/30737946/172079471-651849d0-a621-44d3-abe5-db8f72204057.png)
 
-> Example
+# State as part of Recomposition
+State in an app is any value that can change over time.
+
+> - Unidirectional data flow:
+> - Event
+> - Update state
+> - Display state
+
+![image](https://user-images.githubusercontent.com/30737946/172164107-0f0144ff-4235-4d95-9ff9-9653de99cfb9.png)
+
+
 
 
 - [JetPack Compose](https://developer.android.com/jetpack/compose)
