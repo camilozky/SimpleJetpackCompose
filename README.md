@@ -41,13 +41,22 @@ Compose UI system ⇢  composition
 State in an app is any value that can change over time.
 
 > - Unidirectional data flow:
+
+
 > - Event
 > - Update state
 > - Display state
 
 ![image](https://user-images.githubusercontent.com/30737946/172164107-0f0144ff-4235-4d95-9ff9-9653de99cfb9.png)
 
+# State as part of Recomposition
+> - Advantages:
 
+> - Testability
+> - State encapsulation
+> - UI consistency
+
+![image](https://user-images.githubusercontent.com/30737946/172193494-448d8657-061b-4e9c-9698-a6eba98ddb88.png)
 
 
 - [JetPack Compose](https://developer.android.com/jetpack/compose)
