@@ -5,7 +5,9 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.width
 import androidx.compose.material.Surface
@@ -36,22 +38,27 @@ fun MainScreen() {
             verticalArrangement = Arrangement.SpaceEvenly,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            HorizontalColoredBar(Color.Red)
-            HorizontalColoredBar(Color.Magenta)
-            HorizontalColoredBar(Color.Cyan)
-            HorizontalColoredBar(Color.Yellow)
-            HorizontalColoredBar(Color.Blue)
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceEvenly,
+            ) {
+                ColoredSquare(Color.Red)
+                ColoredSquare(Color.Magenta)
+            }
+            ColoredSquare(Color.Cyan)
+            ColoredSquare(Color.Yellow)
+            ColoredSquare(Color.Blue)
         }
     }
 }
 
 @Composable
-fun HorizontalColoredBar(color: Color) {
+fun ColoredSquare(color: Color) {
     Surface(
         color = color,
         modifier = Modifier
             .height(100.dp)
-            .width(350.dp)
+            .width(100.dp)
     ) { }
 }
 
