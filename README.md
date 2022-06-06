@@ -33,6 +33,9 @@ Compose UI system ⇢  composition
 
 ![image](https://user-images.githubusercontent.com/30737946/172078275-1aad76ce-2119-4b1e-84bf-dc45d3a2f096.png)
 
+# The Declarative paradigm shift
+
+![image](https://user-images.githubusercontent.com/30737946/172079471-651849d0-a621-44d3-abe5-db8f72204057.png)
 
 > Example
 
