@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material.Button
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
@@ -22,7 +23,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Android")
+                    GreetingButton()
                 }
             }
         }
@@ -30,14 +31,20 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
+fun GreetingText(name: String) {
+    Text(text = " Hello $name!")
+}
+
+@Composable
+fun GreetingButton() {
+    Button(onClick = { }) {
+        GreetingText(name = "button")
+        GreetingText(name = "remaining button")
+    }
 }
 
 @Preview(showBackground = true)
 @Composable
-fun DefaultPreview() {
-    JetPackComposeTheme {
-        Greeting("Android")
-    }
+fun DefaultPreviewMainActivity() {
+    GreetingButton()
 }
